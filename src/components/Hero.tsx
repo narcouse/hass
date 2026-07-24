@@ -15,6 +15,9 @@ import {
   Globe
 } from 'lucide-react';
 import { COMPANY_INFO } from '../data/agencyData';
+import heroAgencyShowcase from '../assets/images/hero-agency-showcase.jpg';
+import projectAiAutomation from '../assets/images/project-ai-automation.jpg';
+import projectEcommerceLuxury from '../assets/images/project-ecommerce-luxury.jpg';
 
 interface HeroProps {
   onStartProject: () => void;
@@ -156,9 +159,10 @@ export const Hero: React.FC<HeroProps> = ({ onStartProject, onViewWork }) => {
               {activeTab === 'analytics' && (
                 <div className="relative w-full h-full p-6 flex flex-col justify-between bg-gradient-to-br from-[#0a0a0f] via-[#050508] to-[#0a0a0f]">
                   <img
-                    src="/src/assets/images/hero_agency_showcase_1784916128705.jpg"
-                    alt="YOUBA LLC Agency Dashboard Showcase"
-                    className="absolute inset-0 w-full h-full object-cover opacity-50 mix-blend-luminosity"
+                    src={heroAgencyShowcase}
+                    alt="YOUBA LLC digital agency team and technology workspace"
+                    fetchPriority="high"
+                    className="absolute inset-0 w-full h-full object-cover object-center opacity-50 mix-blend-luminosity"
                     referrerPolicy="no-referrer"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#020205] via-[#020205]/60 to-transparent" />
@@ -263,9 +267,10 @@ export const Hero: React.FC<HeroProps> = ({ onStartProject, onViewWork }) => {
               {activeTab === 'design' && (
                 <div className="relative w-full h-full bg-[#050508] p-6 flex flex-col justify-between">
                   <img
-                    src="/src/assets/images/project_ecom_luxe_1784916142667.jpg"
-                    alt="Luxury E-commerce UI Design"
-                    className="absolute inset-0 w-full h-full object-cover opacity-80"
+                    src={projectEcommerceLuxury}
+                    alt="Premium luxury e-commerce website development project"
+                    loading="lazy"
+                    className="absolute inset-0 w-full h-full object-cover object-center opacity-80"
                     referrerPolicy="no-referrer"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#020205] via-[#020205]/40 to-transparent" />
@@ -283,9 +288,10 @@ export const Hero: React.FC<HeroProps> = ({ onStartProject, onViewWork }) => {
               {activeTab === 'growth' && (
                 <div className="relative w-full h-full bg-[#050508] p-6 flex flex-col justify-between">
                   <img
-                    src="/src/assets/images/project_ai_automation_1784916156657.jpg"
-                    alt="AI Growth Pipeline"
-                    className="absolute inset-0 w-full h-full object-cover opacity-80"
+                    src={projectAiAutomation}
+                    alt="AI automation and intelligent business workflow project"
+                    loading="lazy"
+                    className="absolute inset-0 w-full h-full object-cover object-center opacity-80"
                     referrerPolicy="no-referrer"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#020205] via-[#020205]/40 to-transparent" />
