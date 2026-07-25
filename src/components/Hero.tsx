@@ -15,9 +15,10 @@ import {
   Globe
 } from 'lucide-react';
 import { COMPANY_INFO } from '../data/agencyData';
-import heroAgencyShowcase from '../assets/images/hero-agency-showcase.jpg';
-import projectAiAutomation from '../assets/images/project-ai-automation.jpg';
-import projectEcommerceLuxury from '../assets/images/project-ecommerce-luxury.jpg';
+import heroAgencyImage from '../assets/images/hero-agency-showcase.jpg';
+import aiAutomationImage from '../assets/images/project-ai-automation.jpg';
+import ecommerceImage from '../assets/images/project-ecommerce-luxury.jpg';
+import nexusSaasImage from '../assets/images/nexus-saas-enterprise-platform.jpg';
 
 interface HeroProps {
   onStartProject: () => void;
@@ -159,7 +160,7 @@ export const Hero: React.FC<HeroProps> = ({ onStartProject, onViewWork }) => {
               {activeTab === 'analytics' && (
                 <div className="relative w-full h-full p-6 flex flex-col justify-between bg-gradient-to-br from-[#0a0a0f] via-[#050508] to-[#0a0a0f]">
                   <img
-                    src={heroAgencyShowcase}
+                    src={heroAgencyImage}
                     alt="YOUBA LLC digital agency team and technology workspace"
                     fetchPriority="high"
                     className="absolute inset-0 w-full h-full object-cover object-center opacity-50 mix-blend-luminosity"
@@ -267,7 +268,7 @@ export const Hero: React.FC<HeroProps> = ({ onStartProject, onViewWork }) => {
               {activeTab === 'design' && (
                 <div className="relative w-full h-full bg-[#050508] p-6 flex flex-col justify-between">
                   <img
-                    src={projectEcommerceLuxury}
+                    src={ecommerceImage}
                     alt="Premium luxury e-commerce website development project"
                     loading="lazy"
                     className="absolute inset-0 w-full h-full object-cover object-center opacity-80"
@@ -288,7 +289,7 @@ export const Hero: React.FC<HeroProps> = ({ onStartProject, onViewWork }) => {
               {activeTab === 'growth' && (
                 <div className="relative w-full h-full bg-[#050508] p-6 flex flex-col justify-between">
                   <img
-                    src={projectAiAutomation}
+                    src={aiAutomationImage}
                     alt="AI automation and intelligent business workflow project"
                     loading="lazy"
                     className="absolute inset-0 w-full h-full object-cover object-center opacity-80"

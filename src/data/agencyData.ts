@@ -10,9 +10,10 @@ import {
   BlogArticle
 } from '../types';
 
-import heroAgencyShowcase from '../assets/images/hero-agency-showcase.jpg';
-import projectAiAutomation from '../assets/images/project-ai-automation.jpg';
-import projectEcommerceLuxury from '../assets/images/project-ecommerce-luxury.jpg';
+import heroAgencyImage from '../assets/images/hero-agency-showcase.jpg';
+import aiAutomationImage from '../assets/images/project-ai-automation.jpg';
+import ecommerceImage from '../assets/images/project-ecommerce-luxury.jpg';
+import nexusSaasImage from '../assets/images/nexus-saas-enterprise-platform.jpg';
 
 export const COMPANY_INFO = {
   name: 'YOUBA LLC',
@@ -260,7 +261,7 @@ export const CASE_STUDIES: CaseStudy[] = [
     title: 'Nexus SaaS Enterprise Platform',
     client: 'Nexus Technologies Inc.',
     category: 'Website',
-    image: heroAgencyShowcase,
+    image: nexusSaasImage,
     challenge: 'Nexus was experiencing high bounce rates on their old legacy marketing site and struggle to convey their complex enterprise cloud software to C-level executives.',
     solution: 'YOUBA LLC re-architected the website using Next.js, Framer Motion, and custom WebGL interactive product demos. We simplified the messaging and built a high-converting interactive ROI estimator.',
     technology: ['React', 'Next.js', 'Tailwind CSS', 'Framer Motion', 'TypeScript', 'Gemini API'],
@@ -282,7 +283,7 @@ export const CASE_STUDIES: CaseStudy[] = [
     title: 'Aura Fine Jewelry Storefront',
     client: 'Aura Luxe Global',
     category: 'E-commerce',
-    image: projectEcommerceLuxury,
+    image: ecommerceImage,
     challenge: 'Aura required a luxury digital experience that matched their $50,000+ custom high-end jewelry items with 3D product previews and ultra-fast checkout.',
     solution: 'We engineered a bespoke headless Shopify storefront integrated with 3D interactive ring customization, custom gold-accented UI, and 1-click Apple Pay checkout.',
     technology: ['Shopify Plus', 'React', 'Three.js', 'Stripe', 'Tailwind CSS'],
@@ -304,7 +305,7 @@ export const CASE_STUDIES: CaseStudy[] = [
     title: 'Horizon AI Workflow Engine',
     client: 'Horizon Systems',
     category: 'AI',
-    image: projectAiAutomation,
+    image: aiAutomationImage,
     challenge: 'Horizon spent over 120 hours per week manually categorizing customer contracts and routing support tickets across 4 global offices.',
     solution: 'YOUBA LLC designed an autonomous AI agent system powered by Gemini LLMs that parses incoming documents in real-time, extracts key financial data, and populates CRMs automatically.',
     technology: ['Gemini API', 'Python', 'Node.js', 'React', 'TypeScript', 'Vector Database'],
@@ -685,7 +686,7 @@ export const BLOG_ARTICLES: BlogArticle[] = [
       role: 'Principal Architect, YOUBA LLC',
       avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=300&q=80'
     },
-    image: heroAgencyShowcase,
+    image: heroAgencyImage,
     featured: true
   },
   {
